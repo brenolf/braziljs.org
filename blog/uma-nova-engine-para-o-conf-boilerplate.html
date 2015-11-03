@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+  <title>BrazilJS</title>
+
+  <!-- general meta tags -->
+  <meta charset="UTF-8">
+  <meta name="robots" content="all, index, follow">
+  <meta name="description" content="Uma fundação sem fins lucrativos com a missão de mover e unir a comunidade de JavaScript no Brasil.">
+  <meta name="google-site-verification" content="COZxy1HKlPIx8brzPzijp_eTgMvQrnVtbduoUP2K3Z8">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="http://localhost:9778/img/favicon.ico">
+
+  <!-- google fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="http://localhost:9778/css/main.css">
+
+  <!-- open graph -->
+  <meta property="og:title" content="BrazilJS">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Uma fundação sem fins lucrativos com a missão de mover e unir a comunidade de JavaScript no Brasil.">
+  <meta property="og:url" content="http://localhost:9778/blog/uma-nova-engine-para-o-conf-boilerplate">
+  <meta property="og:image" content="http://localhost:9778/img/fb-share.jpg">
+  <meta property="og:site_name" content="BrazilJS"/>
+  <meta property="og:locale" content="pt_BR">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="top-bar">
+
+      <div class="wrapper">
+        <a href="http://localhost:9778" title="Home" rel="home" class="sprite-home sprite-logo-mini logo-header"></a>
+
+        <ul>
+          <li><a href="http://localhost:9778/eventos">Eventos</a></li>
+          <li><a href="http://localhost:9778/projetos">Projetos</a></li>
+          <li><a href="http://localhost:9778/blog">Blog</a></li>
+          <li><a href="https://www.youtube.com/user/BrazilJS" target="_blank">Vídeos</a></li>
+        </ul>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://braziljs.org/">Tweet</a>
+
+        <div class="fb-like" data-href="https://www.facebook.com/braziljs" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false" style="border:none; float:right; overflow:hidden; width:80px !important; height:12px !important; margin-top:3px;"></div>
+      </div>
+
+    </nav>
+
+    <section class="banner">
+
+      <div class="wrapper">
+        <span class="sprite-home sprite-logo logo"></span>
+        <h1>unidos crescemos</h1>
+        <p>Não levamos apenas conteúdo para as pessoas, nós queremos uni-las.</p>
+      </div>
+
+    </section>
+
+  </header>
+
+
+  <style type="text/css">
+  .content-blog p {
+    margin-bottom: 15px;
+  }
+</style>
+
+<section class="content">
+
+  <div class="wrapper" style="width: 800px;">
+
+    <article class="content-blog">
+
+      <h2 class="title">Uma nova engine para o Conf Boilerplate</h2>
+      <p>Em uma galáxia muito, muito distante... nasceu a ideia de ajudar os organizadores de evento em uma tarefa essencial: <em>o site da conferência</em>.</p>
+<p>Isso porque quanto mais eventos ajudávamos, mais notávamos que na jornada de organização existem dezenas de tarefas que precisam de maior atenção do organizador do que apenas construir um site.</p>
+<p>Nós queríamos montar algo que fosse produtivo e fácil de configurar, por isso optamos pelo caminho dos <a href="https://www.staticgen.com/">geradores estáticos</a>.</p>
+<p><a href="https://github.com/braziljs/conf-boilerplate/tree/v1.0.0">Iniciamos o projeto em Jekyll</a>. Porém, seu foco em blogs e os constantes problemas com as dependências de <a href="https://www.ruby-lang.org/en/">Ruby</a> nos levaram a um caminho óbvio: migrar para <a href="http://nodejs.org/">Node</a>. Afinal, essa organização se chama Brazil<strong>JS</strong>, então nada mais óbvio do que evangelizar algo feito em JavaScript.</p>
+<p>Finalmente em 2012, nesse mesmo blog, <a href="http://braziljs.org/blog/apresentando-conf-boilerplate/">anunciamos o Conf Boilerplate</a>. E desde então, <a href="https://github.com/braziljs/conf-boilerplate#showcase">mais de 20 conferências no mundo todo</a> usaram nossa ferramenta, incluindo <em>DevFest&#39;s</em>, <em>TEDx&#39;s</em> e, é claro, <em>Front In&#39;s</em>.</p>
+<p>Na época optamos pelo <a href="https://docpad.org/">DocPad</a> como engine para construir o Conf Boilerplate por conta do seu alto nível de customização. Essa decisão nos ajudou drasticamente, tracionando diversos projetos e iniciando muitos desenvolvedores no mundo Node.</p>
+<p>Porém, uma série de problemas incluindo <a href="https://github.com/docpad/docpad/issues/821">governância</a> e performance nos levaram a <a href="https://github.com/braziljs/conf-boilerplate/issues/109">explorar outras soluções</a>. O que nos trás ao <a href="http://www.metalsmith.io/">Metalsmith</a>.</p>
+<p>Esperamos que essa nova ferramenta melhore ainda mais o workflow desse projeto e convidamos vocês a brincarem com a <a href="https://github.com/braziljs/conf-boilerplate/releases/tag/v3.0.0">versão 3</a> que trás mudanças de arquitetura, não só na engine de geração estática, mas como também na engine de templates.</p>
+<p>Mais informações sobre como migrar e o que muda exatamente, você pode encontrar nas <a href="https://github.com/braziljs/conf-boilerplate/releases/tag/v3.0.0">notas do release</a>.</p>
+<p>Happy hacking!</p>
+
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'braziljs',
+            disqus_url = '';
+
+        
+        disqus_url = "http://localhost:9778/blog/uma-nova-engine-para-o-conf-boilerplate";
+        
+
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+
+    </article>
+
+  </div>
+
+</section>
+
+  <footer>
+
+    <div class="wrapper">
+
+      <span class="sprite-home sprite-logo-pb"></span>
+
+      <p class="about">BrazilJS é uma fundação sem fins lucrativos com a missão de mover e unir a comunidade em torno do JavaScript no Brasil.</p>
+
+      <ul class="nav">
+        <li><a href="http://braziljs.com.br/" title="Conferência">Conferência</a></li>
+        <li><a href="http://localhost:9778/contato/" title="Contato">Contato</a></li>
+      </ul>
+
+      <ul class="social">
+        <li><a href="https://twitter.com/braziljs" title="Twitter">Twitter</a></li>
+        <li><a href="http://www.facebook.com/braziljs" title="Facebook">Facebook</a></li>
+        <li><a href="https://www.youtube.com/user/BrazilJS" title="YouTube">YouTube</a></li>
+        <li><a href="https://groups.google.com/forum/?fromgroups#!forum/braziljs-foundation">Google Groups</a></li>
+        <li><a href="https://github.com/braziljs" title="Github">Github</a></li>
+      </ul>
+
+      <p class="license">© 2015. Conteúdo disponível sob a licença <a href="http://creativecommons.org/licenses/by/3.0/br/">Creative Commons</a>.</p>
+
+    </div>
+
+  </footer>
+
+  <script>
+  // Google Analytics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33656081-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  // Facebook
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=372862979453673";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Twitter
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+  </script>
+
+</body>
+</html>
